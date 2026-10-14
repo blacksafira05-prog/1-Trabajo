@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Loja | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="shop">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="">Início</a><a href="animais.html" class="">Meus pets</a><a
+                href="consultas.html" class="">Consultas</a><a href="cuidados.html" class="">Cuidados</a><a
+                href="medicamentos.html" class="">Medicamentos</a><a href="loja.html" class="active">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Pequenos mimos, grandes rabinhos</span>
+                <h1>Loja PetVida</h1>
+                <p>Explore acessórios e itens para enriquecer a rotina do seu pet.</p>
+            </div>
+            <div class="service-icon" style="width:60px;height:60px;font-size:29px">🛍️</div>
+        </div>
+        <div class="layout-split" style="grid-template-columns:minmax(0,1fr) 300px">
+            <section>
+                <div class="section-head" style="margin-top:0">
+                    <div>
+                        <h2>Produtos em destaque</h2>
+                        <p>Adicione itens ao carrinho demonstrativo.</p>
+                    </div>
+                </div>
+                <section id="product-list" class="grid two"></section>
+            </section>
+            <aside class="card" style="height:max-content;position:sticky;top:150px">
+                <div class="service-icon">🛒</div>
+                <h2 style="font-size:20px">Seu carrinho</h2>
+                <p>Revise os itens selecionados.</p>
+                <section id="cart-list" class="list"></section>
+                <div class="cart-summary">
+                    <div><span class="small">Total estimado</span><br><strong id="cart-total">R$ 0,00</strong></div>
+                    <button id="checkout-btn" type="button">Finalizar</button>
+                </div>
+                <p class="small" style="margin-top:12px">Protótipo: não há cobrança nem entrega real.</p>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
