@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Cuidados | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="care">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="">Início</a><a href="animais.html" class="">Meus pets</a><a
+                href="consultas.html" class="">Consultas</a><a href="cuidados.html" class="active">Cuidados</a><a
+                href="medicamentos.html" class="">Medicamentos</a><a href="loja.html" class="">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Bem-estar na rotina</span>
+                <h1>Cuidados e higiene</h1>
+                <p>Organize os serviços de banho, tosa e cuidados com as unhas do seu animal.</p>
+            </div>
+            <div class="service-icon" style="width:60px;height:60px;font-size:29px">🛁</div>
+        </div>
+        <section class="grid three">
+            <article class="card">
+                <div class="service-icon">🛁</div>
+                <h3>Banho</h3>
+                <p>Higiene com produtos adequados à espécie e ao tipo de pele e pelagem.</p>
+            </article>
+            <article class="card">
+                <div class="service-icon">✂️</div>
+                <h3>Tosa</h3>
+                <p>Manutenção da pelagem conforme as características e necessidades do pet.</p>
+            </article>
+            <article class="card">
+                <div class="service-icon">🐾</div>
+                <h3>Corte de unhas</h3>
+                <p>Cuidado delicado para evitar desconforto; deve ser feito por alguém capacitado.</p>
+            </article>
+        </section>
+        <div class="section-head">
+            <div>
+                <h2>Registrar um cuidado</h2>
+                <p>Escolha o pet e anote o serviço desejado.</p>
+            </div>
+        </div>
+        <div class="layout-split">
+            <section class="card">
+                <form id="care-form">
+                    <div class="form-grid">
+                        <div class="field full"><label for="care-pet">Animal *</label><select id="care-pet"
+                                required></select></div>
+                        <div class="field"><label for="care-type">Serviço *</label><select id="care-type" required>
+                                <option value="">Selecione</option>
+                                <option>Banho</option>
+                                <option>Tosa</option>
+                                <option>Banho e tosa</option>
+                                <option>Corte de unhas</option>
+                                <option>Escovação</option>
+                                <option>Higiene geral</option>
+                            </select></div>
+                        <div class="field"><label for="care-date">Data desejada *</label><input id="care-date"
+                                type="date" required></div>
+                        <div class="field full"><label for="care-notes">Observações</label><textarea id="care-notes"
+                                placeholder="Ex.: sensibilidade na pele, preferência de tosa..."></textarea></div>
+                    </div>
+                    <div class="form-actions"><button type="submit">＋ Registrar cuidado</button></div>
+                </form>
+            </section>
+            <aside class="card">
+                <h3 style="margin-top:0">Dicas de cuidado seguro</h3>
+                <ul class="checklist">
+                    <li><span>✓</span> Use produtos próprios para a espécie.</li>
+                    <li><span>✓</span> Não force o animal se estiver com medo ou dor.</li>
+                    <li><span>✓</span> Peça ajuda profissional para cortar as unhas.</li>
+                    <li><span>✓</span> Ajuste a frequência do banho conforme a orientação veterinária.</li>
+                </ul>
+            </aside>
+        </div>
+        <section class="section-head">
+            <div>
+                <h2>Cuidados registrados</h2>
+                <p>Seus registros ficam associados ao perfil de cada animal.</p>
+            </div>
+        </section>
+        <section id="care-list" class="list"></section>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
