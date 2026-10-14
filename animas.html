@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Meus pets | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="pets">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="">Início</a><a href="animais.html" class="active">Meus pets</a><a
+                href="consultas.html" class="">Consultas</a><a href="cuidados.html" class="">Cuidados</a><a
+                href="medicamentos.html" class="">Medicamentos</a><a href="loja.html" class="">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Sua família de quatro patas</span>
+                <h1>Meus pets</h1>
+                <p>Cadastre os animais e adicione uma foto para reconhecer cada perfil.</p>
+            </div><span class="tag">🐾 Perfil dos animais</span>
+        </div>
+        <div class="pet-tabs"><a href="#cadastro" class="pet-tab">＋ Cadastrar animal</a><a href="#galeria"
+                class="pet-tab active">📸 Galeria de animais</a></div>
+        <div id="cadastro" class="layout-split">
+            <section class="card">
+                <h2 style="margin-top:0">Cadastrar um animal</h2>
+                <p>Preencha as informações para vincular o pet à sua conta neste navegador.</p>
+                <div class="notice green" style="margin-bottom:16px"><strong>Envio do cadastro:</strong> após salvar,
+                    você poderá preparar um e-mail com os dados do animal para <strong>Blacksafira05@gmail.com</strong>.
+                    O envio precisa ser confirmado no seu aplicativo de e-mail.</div>
+                <form id="pet-form">
+                    <div class="form-grid">
+                        <div class="field"><label for="pet-name">Nome do animal *</label><input id="pet-name"
+                                name="name" required placeholder="Ex.: Mel"></div>
+                        <div class="field"><label for="pet-species">Espécie *</label><select id="pet-species"
+                                name="species" required>
+                                <option value="">Selecione</option>
+                                <option>Cachorro</option>
+                                <option>Gato</option>
+                                <option>Coelho</option>
+                                <option>Ave</option>
+                                <option>Roedor</option>
+                                <option>Réptil</option>
+                                <option>Outro</option>
+                            </select></div>
+                        <div class="field"><label for="pet-gender">Gênero *</label><select id="pet-gender" name="gender"
+                                required>
+                                <option value="">Selecione</option>
+                                <option>Fêmea</option>
+                                <option>Macho</option>
+                                <option>Não sei</option>
+                            </select></div>
+                        <div class="field"><label for="pet-age">Idade (opcional)</label><input id="pet-age" name="age"
+                                placeholder="Ex.: 3 anos"></div>
+                        <div class="field full"><label for="pet-photo">Foto do animal</label><input class="photo-input"
+                                id="pet-photo" name="photo" type="file" accept="image/*"><span class="hint">A foto é
+                                guardada neste navegador. Prefira imagens pequenas.</span></div>
+                        <div class="field full"><label for="pet-notes">Observações (opcional)</label><textarea
+                                id="pet-notes" name="notes"
+                                placeholder="Alergias conhecidas, características ou outras observações"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions"><button type="submit">＋ Salvar pet</button><button type="reset"
+                            class="btn secondary">Limpar</button></div>
+                </form>
+            </section>
+            <aside class="card">
+                <div class="service-icon">📸</div>
+                <h3>Um perfil para cada pet</h3>
+                <p>Use a foto e as informações para facilitar a organização das consultas, dos cuidados e das
+                    orientações registradas.</p>
+                <ul class="checklist">
+                    <li><span>✓</span> Nome, espécie e gênero</li>
+                    <li><span>✓</span> Foto personalizada</li>
+                    <li><span>✓</span> Idade e observações opcionais</li>
+                    <li><span>✓</span> Vínculo com consultas e cuidados</li>
+                </ul>
+                <div class="notice green" style="margin-top:18px">Os dados deste protótipo ficam salvos localmente no
+                    navegador usado para abrir o site.</div>
+            </aside>
+        </div>
+        <section id="galeria" class="pet-gallery-section">
+            <div class="section-head">
+                <div>
+                    <h2>Galeria de animais cadastrados</h2>
+                    <p id="pet-count">Nenhum perfil ainda.</p>
+                </div>
+                <div class="searchbar"><input id="pet-search" placeholder="Buscar animal pelo nome..."
+                        aria-label="Buscar animal"></div>
+            </div>
+            <div id="pet-list" class="grid pet-gallery"></div>
+        </section>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
