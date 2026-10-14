@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Cadastros dos animais | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="pets">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html">Início</a><a href="animais.html">Meus pets</a><a href="cadastros.html"
+                class="active">Cadastros</a><a href="consultas.html">Consultas</a><a href="cuidados.html">Cuidados</a><a
+                href="medicamentos.html">Medicamentos</a><a href="loja.html">Loja</a></nav>
+        <a class="btn top-action" href="animais.html">＋ Cadastrar animal</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Nossa família PetVida</span>
+                <h1>Todos os animais cadastrados</h1>
+                <p>Conheça cada animal em uma galeria com fotos redondas, grandes e suas descrições.</p>
+            </div>
+            <a href="animais.html" class="btn">＋ Novo cadastro</a>
+        </div>
+        <section class="section-head">
+            <div>
+                <h2>Galeria dos pets</h2>
+                <p id="pet-count">Carregando cadastros...</p>
+            </div>
+            <div class="searchbar"><input id="pet-search" placeholder="Buscar pelo nome..."
+                    aria-label="Buscar animal pelo nome"></div>
+        </section>
+        <div id="pet-list" class="grid pet-gallery round-pet-gallery"></div>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz.
+        <span class="small">Os cadastros são armazenados neste navegador.</span>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
