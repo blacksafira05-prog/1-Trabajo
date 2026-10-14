@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Medicamentos | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="meds">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="">Início</a><a href="animais.html" class="">Meus pets</a><a
+                href="consultas.html" class="">Consultas</a><a href="cuidados.html" class="">Cuidados</a><a
+                href="medicamentos.html" class="active">Medicamentos</a><a href="loja.html" class="">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Informações organizadas</span>
+                <h1>Medicamentos e orientações</h1>
+                <p>Registre as instruções que o veterinário passou para cada animal.</p>
+            </div>
+            <div class="service-icon" style="width:60px;height:60px;font-size:29px">💊</div>
+        </div>
+        <div class="notice" style="margin-bottom:20px"><strong>Atenção:</strong> esta área serve apenas para organizar
+            uma prescrição ou orientação profissional já recebida. Não escolha medicamentos ou doses por conta própria e
+            nunca ofereça remédios humanos ao animal sem orientação veterinária.</div>
+        <div class="layout-split">
+            <section class="card">
+                <h2 style="margin-top:0">Adicionar orientação</h2>
+                <form id="med-form">
+                    <div class="form-grid">
+                        <div class="field full"><label for="med-pet">Animal *</label><select id="med-pet"
+                                required></select></div>
+                        <div class="field full"><label for="med-name">Nome do medicamento ou orientação *</label><input
+                                id="med-name" required placeholder="Conforme a receita veterinária"></div>
+                        <div class="field"><label for="med-dose">Dose prescrita</label><input id="med-dose"
+                                placeholder="Copie exatamente da receita"></div>
+                        <div class="field"><label for="med-frequency">Frequência</label><input id="med-frequency"
+                                placeholder="Ex.: conforme prescrição"></div>
+                        <div class="field"><label for="med-start">Data de início</label><input id="med-start"
+                                type="date"></div>
+                        <div class="field"><label for="med-end">Data de término</label><input id="med-end" type="date">
+                        </div>
+                        <div class="field full"><label for="med-notes">Observações</label><textarea id="med-notes"
+                                placeholder="Instruções recebidas do profissional"></textarea></div>
+                    </div>
+                    <div class="form-actions"><button type="submit">＋ Salvar orientação</button></div>
+                </form>
+            </section>
+            <aside class="card">
+                <div class="service-icon">📋</div>
+                <h3>Use como caderno de acompanhamento</h3>
+                <p>Registre o que consta na receita para facilitar a consulta durante o atendimento ou retorno.</p>
+                <ul class="checklist">
+                    <li><span>✓</span> Confira nome e dose com a receita original.</li>
+                    <li><span>✓</span> Respeite horários e duração definidos pelo veterinário.</li>
+                    <li><span>✓</span> Em caso de reação ou dúvida, fale com a clínica.</li>
+                </ul>
+            </aside>
+        </div>
+        <section class="section-head">
+            <div>
+                <h2>Orientações salvas</h2>
+                <p>Registros separados por animal.</p>
+            </div>
+        </section>
+        <section id="med-list" class="list"></section>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
