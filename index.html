@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Início | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="active">Início</a><a href="animais.html" class="">Meus pets</a><a
+                href="consultas.html" class="">Consultas</a><a href="cuidados.html" class="">Cuidados</a><a
+                href="medicamentos.html" class="">Medicamentos</a><a href="loja.html" class="">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div><span class="eyebrow">🐾 Saúde, carinho e praticidade</span>
+                <h1>Todo cuidado do seu pet, em um só lugar.</h1>
+                <p>Organize consultas, acompanhe a rotina de higiene, guarde as orientações do veterinário e encontre
+                    produtos para seu melhor amigo.</p>
+                <div class="actions"><a class="btn" href="consultas.html">Agendar consulta <span>→</span></a><a
+                        class="btn secondary" href="animais.html">Cadastrar meu pet</a></div>
+            </div>
+            <div class="hero-art"><span>🐶🐱</span></div>
+        </section>
+        <section class="section-head">
+            <div>
+                <h2>Como podemos ajudar?</h2>
+                <p>Acesse rapidamente o que seu pet precisa hoje.</p>
+            </div>
+        </section>
+        <section class="grid">
+            <a class="card shortcut" href="consultas.html">
+                <div class="service-icon">🩺</div>
+                <h3>Consultas veterinárias</h3>
+                <p>Escolha o animal, a data e o horário desejados.</p><span class="tag">Agendar →</span>
+            </a>
+            <a class="card shortcut" href="cuidados.html">
+                <div class="service-icon">🛁</div>
+                <h3>Banho, tosa e unhas</h3>
+                <p>Organize os serviços de higiene e bem-estar.</p><span class="tag">Ver cuidados →</span>
+            </a>
+            <a class="card shortcut" href="animais.html">
+                <div class="service-icon">🐕</div>
+                <h3>Meus pets</h3>
+                <p>Guarde fotos e informações dos seus animais.</p><span class="tag">Ver cadastro →</span>
+            </a>
+            <a class="card shortcut" href="medicamentos.html">
+                <div class="service-icon">💊</div>
+                <h3>Orientações e medicamentos</h3>
+                <p>Registre as recomendações recebidas do veterinário.</p><span class="tag">Organizar →</span>
+            </a>
+            <a class="card shortcut" href="loja.html">
+                <div class="service-icon">🛍️</div>
+                <h3>Loja pet</h3>
+                <p>Explore brinquedos, acessórios e itens para o dia a dia.</p><span class="tag">Explorar loja →</span>
+            </a>
+            <a class="card shortcut" href="#cuidado-responsavel">
+                <div class="service-icon">💚</div>
+                <h3>Cuidado responsável</h3>
+                <p>Dicas práticas para manter uma rotina saudável e segura.</p><span class="tag">Ver sugestões ↓</span>
+            </a>
+        </section>
+        <section class="section-head">
+            <div>
+                <h2>Visão geral da sua conta</h2>
+                <p>Um resumo rápido da rotina dos seus animais.</p>
+            </div>
+        </section>
+        <section class="grid four">
+            <div class="card stat">
+                <div class="service-icon">🐾</div>
+                <div><strong id="stat-pets">0</strong><span>Pets cadastrados</span></div>
+            </div>
+            <div class="card stat">
+                <div class="service-icon">📅</div>
+                <div><strong id="stat-appointments">0</strong><span>Consultas solicitadas</span></div>
+            </div>
+            <div class="card stat">
+                <div class="service-icon">🧼</div>
+                <div><strong id="stat-care">0</strong><span>Cuidados registrados</span></div>
+            </div>
+            <div class="card stat">
+                <div class="service-icon">🛒</div>
+                <div><strong id="stat-cart">0</strong><span>Itens no carrinho</span></div>
+            </div>
+        </section>
+        <section id="meus-animais-inicio">
+            <div class="section-head">
+                <div>
+                    <h2>🐾 Fotos dos seus animais</h2>
+                    <p>Veja rapidamente os pets cadastrados neste navegador.</p>
+                </div><a class="btn secondary" href="animais.html">Gerenciar pets →</a>
+            </div>
+            <section id="home-pets" class="grid three"></section>
+        </section>
+        <section id="cuidado-responsavel">
+            <div class="section-head">
+                <div>
+                    <h2>💚 Cuidado responsável</h2>
+                    <p>Pequenas atitudes que fazem diferença todos os dias.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <article class="card care-card"><span class="num">DICA 01</span>
+                    <h3>💧 Água fresca sempre</h3>
+                    <p>Troque a água diariamente e deixe potes limpos e acessíveis. Em dias quentes, confira se há água
+                        suficiente.</p>
+                </article>
+                <article class="card care-card"><span class="num">DICA 02</span>
+                    <h3>🥣 Alimentação adequada</h3>
+                    <p>Ofereça alimento apropriado à espécie, idade e condição do animal. Evite mudanças bruscas sem
+                        orientação.</p>
+                </article>
+                <article class="card care-card"><span class="num">DICA 03</span>
+                    <h3>🩺 Prevenção em dia</h3>
+                    <p>Converse com o veterinário sobre vacinas, vermifugação, controle de parasitas e exames
+                        preventivos.</p>
+                </article>
+                <article class="card care-card"><span class="num">DICA 04</span>
+                    <h3>🎾 Movimento e brincadeira</h3>
+                    <p>Reserve momentos de atividade e enriquecimento ambiental adequados à idade, saúde e espécie do
+                        pet.</p>
+                </article>
+                <article class="card care-card"><span class="num">DICA 05</span>
+                    <h3>🪮 Higiene sem exageros</h3>
+                    <p>Escove a pelagem e mantenha unhas, ouvidos e dentes conforme a necessidade. Peça orientação sobre
+                        produtos seguros.</p>
+                </article>
+                <article class="card care-card"><span class="num">DICA 06</span>
+                    <h3>❤️ Segurança e carinho</h3>
+                    <p>Use identificação, transporte seguro e ambiente protegido. Nunca ofereça medicamentos humanos sem
+                        orientação veterinária.</p>
+                </article>
+            </div>
+            <div class="notice green" style="margin-top:17px"><strong>Importante:</strong> estas dicas são gerais e não
+                substituem avaliação veterinária. Se notar dor, dificuldade para respirar, intoxicação ou mudança
+                importante de comportamento, procure atendimento profissional.</div>
+        </section>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
