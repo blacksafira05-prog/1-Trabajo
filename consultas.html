@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b55">
+    <title>Consultas | PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="appointments">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">✚</span> PetVida</a>
+        <nav class="nav"><a href="index.html" class="">Início</a><a href="animais.html" class="">Meus pets</a><a
+                href="consultas.html" class="active">Consultas</a><a href="cuidados.html" class="">Cuidados</a><a
+                href="medicamentos.html" class="">Medicamentos</a><a href="loja.html" class="">Loja</a></nav><a
+            class="btn top-action" href="consultas.html">＋ Agendar consulta</a>
+    </header>
+    <main class="container">
+        <div class="page-heading">
+            <div><span class="eyebrow">Planeje com tranquilidade</span>
+                <h1>Consultas veterinárias</h1>
+                <p>Solicite um horário para seu pet e acompanhe os pedidos registrados.</p>
+            </div>
+            <div class="service-icon" style="width:60px;height:60px;font-size:29px">📅</div>
+        </div>
+        <div class="layout-split">
+            <section class="card">
+                <h2 style="margin-top:0">Solicitar atendimento</h2>
+                <form id="appointment-form">
+                    <div class="form-grid">
+                        <div class="field full"><label for="appointment-pet">Animal *</label><select
+                                id="appointment-pet" required></select></div>
+                        <div class="field"><label for="appointment-type">Tipo de atendimento *</label><select
+                                id="appointment-type" required>
+                                <option value="">Selecione</option>
+                                <option>Consulta de rotina</option>
+                                <option>Vacinação</option>
+                                <option>Retorno</option>
+                                <option>Avaliação de sintomas</option>
+                                <option>Exames</option>
+                                <option>Outro</option>
+                            </select></div>
+                        <div class="field"><label for="appointment-date">Data desejada *</label><input
+                                id="appointment-date" type="date" required></div>
+                        <div class="field"><label for="appointment-time">Horário desejado *</label><select
+                                id="appointment-time" required>
+                                <option value="">Selecione</option>
+                                <option>08:00</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                            </select></div>
+                        <div class="field full"><label for="appointment-notes">Motivo ou observações</label><textarea
+                                id="appointment-notes"
+                                placeholder="Conte brevemente o motivo da consulta (opcional)"></textarea></div>
+                    </div>
+                    <div class="form-actions"><button type="submit">Solicitar consulta →</button></div>
+                </form>
+            </section>
+            <aside class="card">
+                <div class="service-icon">🩺</div>
+                <h3>Antes da consulta</h3>
+                <ul class="checklist">
+                    <li><span>✓</span> Tenha em mãos o histórico de saúde do animal.</li>
+                    <li><span>✓</span> Anote sintomas, mudanças de apetite ou comportamento.</li>
+                    <li><span>✓</span> Leve receitas e exames anteriores, se houver.</li>
+                    <li><span>✓</span> Use caixa de transporte ou guia adequada.</li>
+                </ul>
+                <div class="notice" style="margin-top:17px">Este formulário registra uma solicitação demonstrativa; não
+                    confirma uma vaga real na clínica.</div>
+            </aside>
+        </div>
+        <section class="section-head">
+            <div>
+                <h2>Solicitações registradas</h2>
+                <p>Consulte ou remova os pedidos salvos neste navegador.</p>
+            </div>
+        </section>
+        <section id="appointment-list" class="list"></section>
+    </main>
+    <footer class="footer"><strong>PetVida</strong> · Cuidado próximo, vida mais feliz. <span class="small">Protótipo
+            demonstrativo — os dados ficam neste navegador.</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
